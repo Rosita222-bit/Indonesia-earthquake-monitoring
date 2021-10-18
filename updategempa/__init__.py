@@ -1,4 +1,4 @@
-import content as content
+
 import requests
 from bs4 import BeautifulSoup
 
@@ -74,3 +74,7 @@ def tampilkan_data(result):
     print(f"Koordinat : {result['koordinat']['ls']}, {result['koordinat']['bt']}")
     print(f"Lokasi : {result['lokasi']}")
     print(f"Dirasakan : {result['dirasakan']}")
+
+if __name__ == '__main__' :
+    result = ekstraksi_data()
+    tampilkan_data(result)
